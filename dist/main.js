@@ -6,6 +6,7 @@ const photoInput = document.getElementById("photo-input");
 const copyEmailBtn = document.getElementById("copy-email");
 const emailText = document.getElementById("email-text");
 const topnav = document.getElementById("topnav");
+const copyEmailDefaultText = copyEmailBtn.dataset.defaultLabel ?? copyEmailBtn.textContent ?? "Copy";
 const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 function showPhoto(dataUrl) {
     photo.src = dataUrl;
@@ -75,13 +76,13 @@ copyEmailBtn.addEventListener("click", async () => {
     const email = emailText.textContent ?? "";
     try {
         await navigator.clipboard.writeText(email);
-        copyEmailBtn.textContent = "Copied!";
+        copyEmailBtn.textContent = copyEmailBtn.dataset.copiedLabel ?? "Copied!";
     }
     catch {
-        copyEmailBtn.textContent = "Failed";
+        copyEmailBtn.textContent = copyEmailBtn.dataset.failedLabel ?? "Failed";
     }
     setTimeout(() => {
-        copyEmailBtn.textContent = "Copy";
+        copyEmailBtn.textContent = copyEmailDefaultText;
     }, 1500);
 });
 window.addEventListener("scroll", () => {

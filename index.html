@@ -11,12 +11,18 @@
   <nav class="topnav" id="topnav">
     <div class="nav-inner">
       <a class="brand" href="#home">raystermomo</a>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </ul>
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+        <div class="language-switch" aria-label="Language switcher">
+          <a href="index.html" lang="en" aria-current="page">English</a>
+          <a href="ja.html" lang="ja">日本語</a>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -57,7 +63,7 @@
               <div class="link-card contact">
                 <span class="link-label">Contact</span>
                 <span class="link-sub" id="email-text">morimoto.rayta@gmail.com</span>
-                <button id="copy-email" type="button">Copy</button>
+                <button id="copy-email" type="button" data-default-label="Copy" data-copied-label="Copied!" data-failed-label="Failed">Copy</button>
               </div>
             </li>
           </ul>

@@ -8,7 +8,7 @@
   --accent: #1d7be8;
   --accent-2: #38b2f5;
   --radius: 12px;
-  --nav-height: 48px;
+  --nav-height: 68px;
   --content-width: 780px;
 }
 
@@ -102,6 +102,42 @@ body {
 }
 
 .nav-links a.active {
+  color: #fff;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.nav-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.language-switch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.language-switch a {
+  display: block;
+  padding: 2px 9px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.language-switch a:hover {
+  color: var(--accent);
+  border-color: var(--border);
+}
+
+.language-switch a[aria-current="page"] {
   color: #fff;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
@@ -634,11 +670,19 @@ a.link-card:hover {
     padding-top: 6px;
   }
 
+  .nav-actions {
+    align-items: flex-start;
+  }
+
+  .language-switch {
+    justify-content: flex-start;
+  }
+
   .topnav {
     height: auto;
   }
 
   .hero {
-    padding-top: 110px;
+    padding-top: 132px;
   }
 }

@@ -7,6 +7,8 @@ const photoInput = document.getElementById("photo-input") as HTMLInputElement;
 const copyEmailBtn = document.getElementById("copy-email") as HTMLButtonElement;
 const emailText = document.getElementById("email-text") as HTMLSpanElement;
 const topnav = document.getElementById("topnav") as HTMLElement;
+const copyEmailDefaultText =
+  copyEmailBtn.dataset.defaultLabel ?? copyEmailBtn.textContent ?? "Copy";
 const navLinks = Array.from(
   document.querySelectorAll<HTMLAnchorElement>(".nav-links a")
 );
@@ -82,12 +84,12 @@ copyEmailBtn.addEventListener("click", async () => {
   const email = emailText.textContent ?? "";
   try {
     await navigator.clipboard.writeText(email);
-    copyEmailBtn.textContent = "Copied!";
+    copyEmailBtn.textContent = copyEmailBtn.dataset.copiedLabel ?? "Copied!";
   } catch {
-    copyEmailBtn.textContent = "Failed";
+    copyEmailBtn.textContent = copyEmailBtn.dataset.failedLabel ?? "Failed";
   }
   setTimeout(() => {
-    copyEmailBtn.textContent = "Copy";
+    copyEmailBtn.textContent = copyEmailDefaultText;
   }, 1500);
 });
 
