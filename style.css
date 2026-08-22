@@ -299,37 +299,18 @@ a.link-card:hover {
   align-items: center;
   justify-content: center;
   background: var(--surface);
-  border: 2px dashed var(--border);
+  border: 2px solid var(--border);
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(29, 123, 232, 0.08);
-  cursor: pointer;
   overflow: hidden;
   position: relative;
-  transition: border-color 0.15s ease;
-}
-
-.photo-box:hover,
-.photo-box:focus,
-.photo-box.dragover {
-  border-color: var(--accent);
-  outline: none;
-}
-
-.photo-box.has-image {
-  border-style: solid;
 }
 
 .photo-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.photo-hint {
-  color: var(--muted);
-  font-size: 0.78rem;
-  text-align: center;
-  padding: 10px;
+  user-select: none;
 }
 
 .band {

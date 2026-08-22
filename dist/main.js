@@ -1,77 +1,8 @@
-const STORAGE_KEY = "raystermomo-photo";
-const photoBox = document.getElementById("photo-box");
-const photo = document.getElementById("photo");
-const photoHint = document.getElementById("photo-hint");
-const photoInput = document.getElementById("photo-input");
 const copyEmailBtn = document.getElementById("copy-email");
 const emailText = document.getElementById("email-text");
 const topnav = document.getElementById("topnav");
 const copyEmailDefaultText = copyEmailBtn.dataset.defaultLabel ?? copyEmailBtn.textContent ?? "Copy";
 const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
-function showPhoto(dataUrl) {
-    photo.src = dataUrl;
-    photo.hidden = false;
-    photoHint.hidden = true;
-    photoBox.classList.add("has-image");
-    try {
-        localStorage.setItem(STORAGE_KEY, dataUrl);
-    }
-    catch {
-        /* image too large for localStorage; still displayed */
-    }
-}
-function loadImageFile(file) {
-    if (!file.type.startsWith("image/"))
-        return;
-    const reader = new FileReader();
-    reader.onload = () => {
-        if (typeof reader.result === "string")
-            showPhoto(reader.result);
-    };
-    reader.readAsDataURL(file);
-}
-photoBox.addEventListener("click", () => photoInput.click());
-photoBox.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        photoInput.click();
-    }
-});
-photoInput.addEventListener("change", () => {
-    const file = photoInput.files?.[0];
-    if (file)
-        loadImageFile(file);
-    photoInput.value = "";
-});
-document.addEventListener("paste", (e) => {
-    const items = e.clipboardData?.items;
-    if (!items)
-        return;
-    for (const item of items) {
-        if (item.type.startsWith("image/")) {
-            const file = item.getAsFile();
-            if (file) {
-                loadImageFile(file);
-                e.preventDefault();
-                break;
-            }
-        }
-    }
-});
-photoBox.addEventListener("dragover", (e) => {
-    e.preventDefault();
-    photoBox.classList.add("dragover");
-});
-photoBox.addEventListener("dragleave", () => {
-    photoBox.classList.remove("dragover");
-});
-photoBox.addEventListener("drop", (e) => {
-    e.preventDefault();
-    photoBox.classList.remove("dragover");
-    const file = e.dataTransfer?.files[0];
-    if (file)
-        loadImageFile(file);
-});
 copyEmailBtn.addEventListener("click", async () => {
     const email = emailText.textContent ?? "";
     try {
