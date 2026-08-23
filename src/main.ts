@@ -61,4 +61,15 @@ for (const el of document.querySelectorAll(".reveal")) {
   revealObserver.observe(el);
 }
 
+// Prevent images from being dragged out, saved, or replaced with a local file.
+for (const image of document.querySelectorAll("img")) {
+  image.addEventListener("dragstart", (event) => event.preventDefault());
+  image.addEventListener("contextmenu", (event) => event.preventDefault());
+}
+
+// Block files dropped onto the page from doing anything.
+for (const eventName of ["dragover", "drop"] as const) {
+  window.addEventListener(eventName, (event) => event.preventDefault());
+}
+
 export {};
