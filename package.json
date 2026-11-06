@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
-  },
-  "devDependencies": {
-    "typescript": "^5.5.0"
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs"
   }
 }

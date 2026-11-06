@@ -1,0 +1,170 @@
+{
+  "profile": {
+    "handle": "raystermomo",
+    "name": { "en": "Rayta Morimoto", "ja": "森本 嶺大" },
+    "mascot": "Images/ALWAYS ICON.png",
+    "mascotAlt": { "en": "My smiling plush mascot", "ja": "笑顔のぬいぐるみマスコット" },
+    "email": "morimoto.rayta@gmail.com",
+    "intro": {
+      "en": "I'm interested in expanding human physical and expressive capacity through neuroscience and AI. I work on biological signal analysis and machine learning. I love building things.",
+      "ja": "神経科学とAIを通じて、人間の身体や表現の可能性を拡張することに関心があります。生体信号解析や機械学習を中心に、開発・研究に取り組んでいます。ものをつくることが好きです。"
+    },
+    "aside": { "en": "Outside of that: guitar, tennis, and anime.", "ja": "趣味はギター、テニス、アニメです。" },
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/Rayta0320" },
+      { "label": "Qiita", "url": "https://qiita.com/Rayray_0-0" }
+    ]
+  },
+  "labels": {
+    "skip": { "en": "Skip to content", "ja": "本文へスキップ" },
+    "navigation": { "en": "Sections", "ja": "セクション" },
+    "language": { "en": "Language", "ja": "言語" },
+    "home": { "en": "About", "ja": "自己紹介" },
+    "research": { "en": "Research", "ja": "研究" },
+    "projects": { "en": "Projects", "ja": "プロジェクト" },
+    "awards": { "en": "Background", "ja": "経歴・活動" },
+    "achievements": { "en": "Achievements", "ja": "受賞・修了実績" },
+    "skills": { "en": "Skills & interests", "ja": "スキル・関心" },
+    "more": { "en": "Earlier activities & education", "ja": "これまでの活動・学び" },
+    "top": { "en": "Back to top ↑", "ja": "トップへ ↑" }
+  },
+  "research": [
+    {
+      "title": {
+        "en": "Proposing a Deep Spiking Neural Network Inspired by Global Feedback Mechanisms in the Visual Cortex",
+        "ja": "視覚野におけるグローバルフィードバック機能を模倣したDeep Spiking Neural Networkの提案"
+      },
+      "description": {
+        "en": "A deep convolutional spiking neural network combining local STDP learning with top-down feedback. Evaluated on MNIST and ETH-80, improving classification accuracy and neuronal firing activity over the baseline.",
+        "ja": "局所的なSTDP学習とトップダウンのフィードバックを組み合わせた深層畳み込みスパイキングニューラルネットワークを提案。MNISTとETH-80で評価し、従来モデルに対する分類精度の向上とニューロン発火活動の増加を確認しました。"
+      },
+      "note": {
+        "en": "NII Master of Informatics, 6th cohort · Advised by Associate Professor Mahito Sugiyama. Poster at IPSJ 2026; accepted for an Abstract Presentation at ICONIP 2026.",
+        "ja": "国立情報学研究所「情報科学の達人」6期生。杉山麿人准教授の指導のもと、IPSJ 2026でポスター発表。ICONIP 2026にAbstract Presentationとして採択。"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "NeuroCanvas",
+      "url": "https://github.com/Rayta0320/NeuroCanvas",
+      "tools": "Python · EEG · TouchDesigner",
+      "description": {
+        "en": "Real-time generative visuals driven by valence and arousal estimated from Muse EEG signals.",
+        "ja": "Museの脳波信号からvalence/arousalを推定し、TouchDesignerの生成ビジュアルをリアルタイムに制御。"
+      }
+    },
+    {
+      "title": "DL-Basic",
+      "url": "https://github.com/Rayta0320/DL-Basic",
+      "tools": "Python · EEG · CNN / Attention",
+      "description": {
+        "en": "Classifying viewed image categories from EEG, with an original CNN-attention model for Matsuo Lab's Deep Learning Basic course.",
+        "ja": "松尾研究室のDeep Learning基礎講座で、CNNとAttentionを組み合わせ、脳波から見ている画像のカテゴリを分類。"
+      }
+    },
+    {
+      "title": "LineChatbot",
+      "url": "https://huggingface.co/spaces/raystermomo/LineChatbot",
+      "tools": "Streamlit · Claude API · Hugging Face",
+      "description": {
+        "en": "A role-playing chat app with optional persona and relationship analysis from a LINE chat export.",
+        "ja": "LINEのトーク履歴から相手の特徴や関係性を分析し、会話相手をロールプレイするチャットアプリ。"
+      }
+    },
+    {
+      "title": "EMG-Adapt Reproduction",
+      "url": "https://github.com/Rayta0320/EMG-Adapt-Reproduction",
+      "tools": "PyTorch · EMG · Few-shot learning",
+      "description": {
+        "en": "Reproducing few-shot EMG gesture recognition with CCA features, 1D-CNN embeddings, and meta-learning.",
+        "ja": "CCA特徴量、1D-CNN埋め込み、メタラーニングによる少数ショットEMGジェスチャ認識の再現実装。"
+      }
+    },
+    {
+      "title": "Common Spatial Pattern",
+      "url": "https://github.com/Rayta0320/Common-Spatial-Pattern-Algorithm",
+      "tools": "Python · EEG · CSP / LDA",
+      "description": {
+        "en": "Classifying left- and right-hand motor imagery EEG using CSP and LDA for my IB Extended Essay.",
+        "ja": "IB Extended Essayで、CSPとLDAを用いて右手・左手の運動想起に関する脳波を分類。"
+      }
+    }
+  ],
+  "background": [
+    {
+      "title": { "en": "FastNeura", "ja": "FastNeura" },
+      "description": { "en": "Internship at a neurotechnology startup, February–June 2026.", "ja": "ニューロテック系スタートアップでインターン。2026年2月〜6月。" }
+    }
+  ],
+  "achievements": [
+    {
+      "title": { "en": "Japan Artificial Intelligence Olympiad 2026", "ja": "日本人工知能オリンピック2026" },
+      "description": { "en": "Bronze Award, Open Category.", "ja": "オープン枠 銅賞。" }
+    },
+    {
+      "title": { "en": "12th Japan Brain Bee", "ja": "第12回日本脳科学オリンピック（Japan Brain Bee）" },
+      "description": { "en": "8th place nationally.", "ja": "全国8位入賞。" }
+    },
+    {
+      "title": { "en": "Matsuo Lab, University of Tokyo", "ja": "東京大学 松尾研究室" },
+      "description": { "en": "Completed Deep Generative Models (Spring 2026) and Deep Learning Basic (Spring 2025).", "ja": "深層生成モデル講座（2026 Spring）、Deep Learning基礎講座（2025 Spring）を修了。" }
+    }
+  ],
+  "earlier": [
+    {
+      "title": { "en": "International Baccalaureate Diploma", "ja": "国際バカロレア（IB）ディプロマ" },
+      "description": { "en": "Completed the diploma; received a school excellence award for an approximately 4,000-word Extended Essay on EEG classification.", "ja": "ディプロマを修了。脳波分類について約4,000語の英語論文を執筆し、校内優秀賞を受賞。" }
+    },
+    {
+      "title": { "en": "Imperial College London Summer Program", "ja": "Imperial College London サマープログラム" },
+      "description": { "en": "August 2024. Read and presented research on word embeddings in natural language processing.", "ja": "2024年8月に参加。自然言語処理の単語埋め込みに関する論文を読み、要約・発表。" }
+    },
+    {
+      "title": { "en": "HALLO Typing Contest", "ja": "HALLO タイピングコンテスト" },
+      "description": { "en": "3rd place, high school division, first contest (2024).", "ja": "第1回大会 高校生部門3位（2024年）。" }
+    },
+    {
+      "title": { "en": "Kids Code Club", "ja": "Kids Code Club" },
+      "description": { "en": "Helped lead a high school volunteer group teaching coding to children with disabilities and limited access to technology; contributed to an AI session.", "ja": "高校生ボランティア団体の中心メンバーとして、障がいや技術アクセスの不足がある子どもたちにコーディングを教え、AIプログラムの実施にも貢献。" }
+    },
+    {
+      "title": { "en": "IB Rocket Club", "ja": "IBロケット部" },
+      "description": { "en": "Founded my school's rocket club and led it for a year.", "ja": "学校でロケット部を創設し、1年間リーダーを担当。" }
+    },
+    {
+      "title": { "en": "Iseta Myojoen Elderly Care Home", "ja": "高齢者施設でのボランティア" },
+      "description": { "en": "Volunteered with washing, conversation, and cleaning, learning first-hand about care services in Japan.", "ja": "洗い物・会話・清掃などを手伝い、日本の介護サービスの現場を経験。" }
+    },
+    {
+      "title": { "en": "Papillon", "ja": "Papillon" },
+      "description": { "en": "Guitarist in a band, performing at school festivals and sharing performances on Instagram with nearly 300 followers.", "ja": "バンドのギタリストとして学校祭で演奏。Instagramに演奏動画を継続的に投稿し、約300人のフォロワーを獲得。" }
+    }
+  ],
+  "about": [
+    {
+      "title": { "en": "Tools & interests", "ja": "技術・関心" },
+      "items": [
+        { "label": "Python", "text": { "en": "Machine learning, EEG/EMG analysis, Streamlit apps", "ja": "機械学習、EEG/EMG解析、Streamlitアプリ" } },
+        { "label": "C++", "text": { "en": "Competitive programming", "ja": "競技プログラミング" } },
+        { "label": { "en": "Interests", "ja": "関心" }, "text": { "en": "Computer vision, generative models, natural language processing", "ja": "コンピュータビジョン、生成モデル、自然言語処理" } },
+        { "label": { "en": "Workflow", "ja": "取り組み" }, "text": { "en": "Data processing, evaluation, deployment, and research writing, with review and feedback", "ja": "レビューやフィードバックを受けながら、データ処理・評価・デプロイ・研究論文の執筆" } }
+      ]
+    },
+    {
+      "title": { "en": "Languages", "ja": "言語" },
+      "items": [
+        { "label": { "en": "Japanese", "ja": "日本語" }, "text": { "en": "Native", "ja": "ネイティブ" } },
+        { "label": { "en": "English", "ja": "英語" }, "text": { "en": "Business level; comfortable reading and evaluating research", "ja": "ビジネスレベル。英語の研究論文の読解・評価" } },
+        { "label": "TOEFL iBT", "text": { "en": "107/120 · October 2025", "ja": "107/120（2025年10月）" } }
+      ]
+    },
+    {
+      "title": { "en": "Beyond research", "ja": "研究のほかに" },
+      "items": [
+        { "label": "Qiita", "text": { "en": "Writing about math learned through machine learning", "ja": "機械学習で学んだ数学を発信" } },
+        { "label": { "en": "Tennis", "ja": "テニス" }, "text": { "en": "5+ years, since middle school", "ja": "中学2年生から5年以上" } }
+      ]
+    }
+  ]
+}
