@@ -11,7 +11,7 @@
     },
     "aside": { "en": "Outside of that: guitar, tennis, and anime.", "ja": "趣味はギター、テニス、アニメです。" },
     "links": [
-      { "label": "GitHub", "url": "https://github.com/Rayta0320" },
+      { "label": "GitHub", "url": "https://github.com/raystermomo" },
       { "label": "Qiita", "url": "https://qiita.com/Rayray_0-0" }
     ]
   },
@@ -47,7 +47,7 @@
   "projects": [
     {
       "title": "NeuroCanvas",
-      "url": "https://github.com/Rayta0320/NeuroCanvas",
+      "url": "https://github.com/raystermomo/NeuroCanvas",
       "tools": "Python · EEG · TouchDesigner",
       "description": {
         "en": "Real-time generative visuals driven by valence and arousal estimated from Muse EEG signals.",
@@ -56,7 +56,7 @@
     },
     {
       "title": "DL-Basic",
-      "url": "https://github.com/Rayta0320/DL-Basic",
+      "url": "https://github.com/raystermomo/DL-Basic",
       "tools": "Python · EEG · CNN / Attention",
       "description": {
         "en": "Classifying viewed image categories from EEG, with an original CNN-attention model for Matsuo Lab's Deep Learning Basic course.",
@@ -74,7 +74,7 @@
     },
     {
       "title": "EMG-Adapt Reproduction",
-      "url": "https://github.com/Rayta0320/EMG-Adapt-Reproduction",
+      "url": "https://github.com/raystermomo/EMG-Adapt-Reproduction",
       "tools": "PyTorch · EMG · Few-shot learning",
       "description": {
         "en": "Reproducing few-shot EMG gesture recognition with CCA features, 1D-CNN embeddings, and meta-learning.",
@@ -83,7 +83,7 @@
     },
     {
       "title": "Common Spatial Pattern",
-      "url": "https://github.com/Rayta0320/Common-Spatial-Pattern-Algorithm",
+      "url": "https://github.com/raystermomo/Common-Spatial-Pattern-Algorithm",
       "tools": "Python · EEG · CSP / LDA",
       "description": {
         "en": "Classifying left- and right-hand motor imagery EEG using CSP and LDA for my IB Extended Essay.",
